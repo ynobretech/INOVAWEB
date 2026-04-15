@@ -1,0 +1,16 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+#hero {
+    background: linear-gradient(135deg, #0d6efd, #fd7e14);
+    color: white;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-custom {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+  
