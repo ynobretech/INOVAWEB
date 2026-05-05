@@ -1,110 +1,76 @@
+<!-- INTRODUÇÃO AO BOOTSTRAP -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>InovaWeb | Soluções Tecnológicas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="p-4">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">InovaWeb</a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="https://www.souspike.com.br" target="_blank">SOUSPIKE</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>InovaWeb</h1>
-            <p class="destaque">A sua solução tecnológica <strong>MASTER</strong></p>
-            <p>Criamos sites modernos, responsivos e inovadores para a sua empresa se destacar no mercado digital.</p>
-        </div>
-        <figure>
-            <img src="./spiritmonger.jpg" alt="Banner ilustrativo da InovaWeb apresentando soluções digitais" width="500">
-        </figure>
-    </header>
 
-    <main>
-        <section id="servicos">
-            <h2>Nossos Serviços</h2>
-            <ul>
-                <li>Desenvolvimento de sites</li>
-                <li>Desenvolvimento de apps</li>
-                <li>Consultoria em Tecnologia</li>
-                <li>Suporte Técnico</li>
-            </ul>
+  <h1>Olá Bootstrap!</h1>
+  <p class="lead">Esse parágrafo já tem estilo Bootstrap.</p>
+  <button class="btn btn-primary">Botão primário</button>
+  <button class="btn btn-danger">Botão secundário</button>
+  <button class="btn btn-outline-success">Botão outline</button>
+  <button class="btn btn-warning">Botão outline 2</button>
 
-            <h3>Como trabalhamos</h3>
-            <ol>
-                <li>Entre em contato conosco</li>
-                <li>Solicite um orçamento</li>
-                <li>Desenvolvemos a solução ideal para você</li>
-                <li>Veja seu negócio crescer com a InovaWeb</li>
-            </ol>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-6 bg-warning">col-6</div>
+      <div class="col-6 bg-success">col-6</div>
+    </div>
+  </div>
 
-            <div class="table-container">
-                <table>
-                    <caption>Preços Médios dos Serviços</caption>
-                    <thead> 
-                        <tr>
-                            <th scope="col">Serviço</th>
-                            <th scope="col">Preço</th>
-                            <th scope="col">Descrição</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Desenvolvimento de sites</td>
-                            <td>R$ 2.000,00</td>
-                            <td>Criação e ajustes simples de sites</td>
-                        </tr>
-                        <tr>
-                            <td>Desenvolvimento de apps</td>
-                            <td>R$ 5.000,00</td>
-                            <td>Criação e ajustes simples de apps</td>
-                        </tr>
-                        <tr>
-                            <td>Consultoria em Tecnologia</td>
-                            <td>R$ 500,00/hora</td>
-                            <td>Orientação e planejamento tecnológico</td>
-                        </tr>
-                        <tr>
-                            <td>Suporte Técnico</td>
-                            <td>R$ 200,00/hora</td>
-                            <td>Assistência técnica e resolução de problemas</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+  <div class="container mt-4"></div>
+    <div class="row">
+      <div class="col text-center col-md-6 col-lg-3 bg-warning">col-1</div>
+      <div class="col text-center col-12 col-md-6 col-lg-3 bg-danger">col-2</div>
+      <div class="col text-center col-12 col-md-6 col-lg-3 bg-primary">col-3</div>
+      <div class="col-12 col-md-6 col-lg-3 bg-success">col-4</div>
+    </div>
+  </div>
 
-        <section id="contato">
-            <h2>Formulário de contato</h2>
-            <form action="enviar.php" method="post">
-                <div class="form-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" maxlength="500" rows="4" required></textarea>
-                </div>
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Mobile: coluna única | Tablet: 2 col | Desktop: 4 col -->
+      <div class="col-3">Card 1</div>
+      <div class="col-2">Card 2</div>
+      <div class="col-1">Card 3</div>
+      <div class="col-6" bg danger>Card 4</div>
+    </div>
+  </div>
 
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 InovaWeb - Todos os direitos reservados.</p>
-    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>
