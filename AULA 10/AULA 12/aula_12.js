@@ -101,7 +101,7 @@ btnBloquear.textcontent = 'Bloquear Conta'
     for (const transacao of historico) {
         if (transacao.includes('Depósito')) {
             totalDepositos++;
-        } elseif (transacao.includes('Saque')) {
+        } elseif (transacao.includes('Saque')) { e
             totalSaques++;
         }
         totalTransacoes++;
