@@ -63,7 +63,7 @@ btnBloquear.addEventListener('click', bloquearConta)
       if (valor > 0 && valor <= saldo) {
           saldo -= valor
           historico.push(`sacar: R$ ${valor}  | Saldo: R$ ${saldo}`)
-          exibirMensagem    (`\nSaque de R$ ${valor.toFixed(2)} relizado com sucesso!
+          exibirMensagem    (`\nSaque de R$ ${valor.toFixed(2)} realizado com sucesso!
           \nNovo saldo: R$ ${saldo.toFixed(2)}`)
           verExtrato()
       } else {
@@ -102,7 +102,7 @@ btnBloquear.textcontent = 'Bloquear Conta'
         if (transacao.includes('Depósito')) {
             totalDepositos++;
         } elseif (transacao.includes('Saque')) {
-            totalSaques++;
+        totalSaques++;
         }
         totalTransacoes++;
   }
@@ -110,6 +110,6 @@ btnBloquear.textcontent = 'Bloquear Conta'
   elTotalDepositos.textContent = totalDepositos
   elTotalSaques.textContent =  totalSaques
   elTotalTransacoes.textContent = totalTransacoes
-  
+
 }
   

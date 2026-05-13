@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Banco InovaWeb</title>
-  <link rel="stylesheet" href="aula_12.css">
+  <link rel="stylesheet" href="style.css">
 
 <body>
   <h1>Banco InovaWeb</h1>
@@ -58,6 +58,7 @@
         -->
         <button id="btn-depositar">⬆ Depositar</button>
         <button id="btn-sacar">⬇ Sacar</button>
+        <button id="btn-limpar_historico"> Limpar Histórico</button>
       </div>
 
       <!--
@@ -115,18 +116,7 @@
 
   </div>
 
-  <script src="aula_12.js"></script>
- 
- <script>
-  const paragrafo = document.createElement('p')
-  paragrafo.textcontent = 'Este é um parágrafo criado dinamicamente'
-  paragrafo.style.color = 'blue'
-  document.body.appendChild(paragrafo)
-
-  const item = document.createElement('li')
-  item.textContent = 'Este é um item criado dimamicamente!'
-  document.getElementById('exemplo_lista').appendChild(item)
- </script>
+  <script src="banco.js"></script>
 
 </body>
 

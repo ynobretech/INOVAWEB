@@ -48,6 +48,7 @@ function sacar(valor) {
 
 }
 
+
 /* sacar(480)
 sacar(330)
 sacar(1800) */
